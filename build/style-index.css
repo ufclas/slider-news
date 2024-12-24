@@ -1,0 +1,105 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.slider {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #f3f1e9 #fa4616;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .slider {
+    margin-bottom: 50px;
+  }
+}
+.slider .slider-col {
+  max-width: 450px;
+  transition: all 0.2s ease-in-out;
+  min-width: 300px;
+  text-decoration: none;
+  width: 100%;
+}
+.slider .slider-col:hover, .slider .slider-col:focus {
+  background-color: #f3f1e9;
+}
+.slider .slider-col .slider-content-wrapper {
+  position: relative;
+  z-index: 999;
+}
+.slider .slider-col .slide-title {
+  font-family: "gentonasemibold";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #000;
+}
+.slider .slider-col .slide-subtext {
+  font-family: "gentonalight";
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.slider::-webkit-scrollbar {
+  height: 10px;
+  -webkit-appearance: none;
+}
+@media only screen and (min-width: 400px) {
+  .slider::-webkit-scrollbar {
+    height: 1rem;
+  }
+}
+
+.slider::-webkit-scrollbar-track {
+  background-color: #bbbbba;
+  border-radius: 15px;
+  margin: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .slider::-webkit-scrollbar-track {
+    margin: 30vw;
+  }
+}
+
+.slider::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #bbbbba;
+  background-image: linear-gradient(#bbbbba 0, #bbbbba 0rem, #fa4616 0rem, #fa4616 1rem);
+}
+
+.mobile-slide-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-slide-btn {
+    display: none;
+  }
+}
+.mobile-slide-btn button {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background: none !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FA4616 !important;
+  border: none;
+  line-height: 1;
+}
+
+.slider-content-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

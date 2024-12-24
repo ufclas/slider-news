@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/slider-news",
+  "version": "0.1.0",
+  "title": "Slider - News",
+  "category": "widgets",
+  "icon": "universal-access-alt",
+  "attributes": {
+    "numberOfItems": {
+      "type": "number",
+      "default": 3
+    },
+    "simpleCategory": {
+      "type": "number",
+      "default": ""
+    },
+    "selectedCategories": {
+      "type": "array"
+    },
+    "postCats": {
+      "type": "array",
+      "default": []
+    },
+    "selectedTags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        ""
+      ]
+    },
+    "displayExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayThumbnail": {
+      "type": "boolean",
+      "default": true
+    },
+    "message": {
+      "type": "string",
+      "default": "College News"
+    }
+  },
+  "textdomain": "slider-news",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
