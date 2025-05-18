@@ -39,14 +39,14 @@
   z-index: 999;
 }
 .wp-block-create-block-slider-news .slider .slider-col .slide-title {
-  font-family: "gentonasemibold";
+  font-family: "IBM Plex semibold";
   font-size: 24px;
   line-height: 28px;
   text-align: left;
   color: #000;
 }
 .wp-block-create-block-slider-news .slider .slider-col .slide-subtext {
-  font-family: "gentonalight";
+  font-family: "IBM Plex light";
   font-size: 20px;
   line-height: 28px;
   text-align: left;

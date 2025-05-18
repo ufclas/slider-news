@@ -3,7 +3,7 @@
  * Plugin Name:       Slider News
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -58,7 +58,7 @@ function create_block_dynamo_render_callback( $attr ) {
 			
 			$title = $p->post_title ? $p->post_title : 'Default title';
 			$url = esc_url( get_permalink( $p->ID ) );
-			$thumbnail = has_post_thumbnail( $p->ID ) ? get_the_post_thumbnail( $p->ID, 'full'  ) : 'sas';
+			$thumbnail = has_post_thumbnail( $p->ID ) ? get_the_post_thumbnail( $p->ID, 'full'  ) : '';
 
 			$output .= '<a class="col-12 col-md-4 mb-4 position-relative slider-col" tabindex="0" href="' . $url . '">';
             $output .= '<div class="p-4 slider-content-wrapper">';
